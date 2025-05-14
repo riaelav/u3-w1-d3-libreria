@@ -1,0 +1,95 @@
+.footer-container {
+  background-color: rgb(53, 123, 193);
+  position: sticky;
+}
+
+footer li {
+  list-style: none;
+}
+.fit {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+
+.title {
+  width: 100px;
+}
+
+.topbar {
+  background-color: #b7410e !important;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.topbar .navbar-brand,
+.topbar .nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.topbar .nav-link:hover,
+.topbar .navbar-brand:hover {
+  color: #ffe4c4 !important;
+  text-decoration: underline;
+}
+
+.topbar .navbar-toggler {
+  border-color: white;
+}
+
+.rust-text {
+  font-family: "Courier New", Courier, monospace;
+  color: #b7410e;
+}
+
+.rust-text h1,
+.rust-text p {
+  margin: 0;
+  color: #b7410e;
+}
+
+.footer-container {
+  background-color: #b7410e;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-container li {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-container li:hover {
+  color: #ffe4c4;
+  text-decoration: underline;
+}
+
+.rust-button {
+  background-color: #b7410e;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+.singleCard {
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
