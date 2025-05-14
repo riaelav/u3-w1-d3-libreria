@@ -8,14 +8,22 @@ class SingleBook extends Component {
 
   cardToggle = () => {
     console.log("card cliccata");
-    this.setState((prevState) => ({
-      isCardSelected: !prevState.isCardSelected,
-    }));
+
+    if (this.state.isCardSelected === true) {
+      this.setState({ isCardSelected: false });
+    } else {
+      this.setState({ isCardSelected: true });
+    }
   };
 
   render() {
+    let cardClass = "singleCard";
+    if (this.state.isCardSelected) {
+      cardClass += " border border-2 border-danger";
+    }
+
     return (
-      <Card className={`singleCard ${this.state.isCardSelected ? "border border-2 border-danger" : ""}`} onClick={this.cardToggle}>
+      <Card className={cardClass} onClick={this.cardToggle}>
         <Card.Img className="singleCardImg" variant="top" src={this.props.book.img} />
         <Card.Body className="text-center">
           <Card.Title className="singleCardTitle overflow-hidden">{this.props.book.title}</Card.Title>

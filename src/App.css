@@ -92,4 +92,10 @@ footer li {
 .singleCard {
   cursor: pointer;
   transition: border 0.3s ease;
+  height: 400px;
+}
+.singleCardImg {
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
 }
